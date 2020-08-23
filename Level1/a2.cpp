@@ -23,13 +23,14 @@ int main()
 using namespace std;
 int main()
 {
-    int i,f=0;
+    int i;
     string s;
     cin>>s;
     cout<<s[0];
-    while(cin>>s)
+    while(cin>>s && cin.get()!=(int)'\n')
     {
         cout<<"."<<s[0];
     }
+    cout<<"."<<s[0];
     return 0;
 }
